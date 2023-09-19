@@ -7,6 +7,21 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "1000px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    colors: {
+      white: "#fff",
+      pink: "#d966d5",
+      blue: "#4A46F7",
+    },
+     fontFamily: {
+      Ubuntu: ["Ubuntu", "sans-serif"],
+      Oswald: ["Oswald", "sans-serif"],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
