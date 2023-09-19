@@ -10,7 +10,7 @@ const Hero = () => {
           className={`max-w-[1380px] w-full h-full m-auto flex justify-center items-start flex-col p-4`} >
           {/* Image */}
            <div className="relative w-[160px] h-[130px] sm:w-[219.21px] sm:h-[139.68px]">
-            <Image src={"/BG/Logo.png"} layout="fill" objectFit="contain" />
+            <Image src={"/BG/logo11.png"} layout="fill" objectFit="contain" />
           </div>
 
           {/* Heading */}
