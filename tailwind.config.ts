@@ -16,7 +16,7 @@ const config: Config = {
     colors: {
       white: "#fff",
       pink: "#d966d5",
-      blue: "#4A46F7",
+     blue: "#4A46F7",
     },
      fontFamily: {
       Ubuntu: ["Ubuntu", "sans-serif"],
