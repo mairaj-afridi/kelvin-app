@@ -1,8 +1,6 @@
 'use client'
-import React from "react";
 import Image from "next/image";
 import { useTimer } from 'react-timer-hook';
-// import { Fade } from "react-reveal";
 
 const Lottery = () => {
 
@@ -21,21 +19,18 @@ const Lottery = () => {
         restart,
     } = useTimer({ expiryTimestamp, onExpire: () => console.warn('onExpire called') });
 
-
   return (
     <div id="Lottery" className="w-full h-screen">
-    {/* <Fade cascade bottom > */}
   <div
     className={`max-w-[1380px] w-full h-full m-auto flex justify-center items-start flex-col px-4`}
   >
-    {/* Heading */}
+    {/* ............>>>  Heading .................*/}
     <h1 className="capitalize font-Ubuntu font-bold text-white md:text-[65px] sm:text-[50px] text-[44px] md:leading-[70px] sm:leading-[58px] leading-[46px] my-10">
       daily lottery
     </h1>
-
-    {/* Banner */}
+    {/*.............>> Banner ....................*/}
     <div className="w-full py-6 bg-[rgba(0,0,0,0.6)] rounded flex justify-center items-center md:flex-row flex-col mt-10">
-      {/* Left Banner */}
+      {/*..............>> Left Banner .............*/}
       <div className="flex justify-center items-start flex-col md:w-[50%] w-full h-full ">
         <h3 className="text-[20px] text-white leading-[40px] tracking-[50%] font-Oswald font-normal md:ml-16 md:self-start self-center">
           PRIZE POOL
@@ -46,6 +41,7 @@ const Lottery = () => {
             src={"/SVG/banner.svg"}
             layout="fill"
             objectFit="contain"
+            alt="banner"
           />
 
           <div className="absolute w-full h-full flex justify-center items-center">
@@ -54,6 +50,7 @@ const Lottery = () => {
                 src={"/BG/Logo11.png"}
                 layout="fill"
                 objectFit="contain"
+                alt="logo11"
               />
             </div>
             <h2 className="md:text-[56px] text-[30px] text-white md:leading-[82.99px] leading-[36px] tracking-[50%] font-Oswald font-normal ml-10">
@@ -61,19 +58,16 @@ const Lottery = () => {
             </h2>
           </div>
         </div>
-
         <h3 className="text-[15px] text-white leading-[17.24px] tracking-[50%] font-Ubuntu font-[400] md:ml-16 md:self-start self-center">
           129,382 Tickets in Game
         </h3>
       </div>
-
-      {/* Right Banner */}
+      {/* ..............>> Right Banner .............. */}
       <div className="flex justify-center items-center flex-col md:w-[50%] w-full h-full md:mt-0 mt-8">
         <h3 className="text-[18px] text-white leading-[26.68px] tracking-[50%] font-Oswald font-[400]">
           LOTTERY DRAW STARTS IN
         </h3>
-
-        {/* CountDown */}
+        {/*................>>>> CountDown .................*/}
         <div className="md:w-auto w-full flex justify-center items-center my-6">
           {/* days */}
           <div className="md:w-[105px] w-[80px] md:h-[138px] h-[80px] bg-gradient-to-r from-pink to-blue rounded flex justify-center items-center flex-col md:mr-4 mr-2 ">
@@ -85,7 +79,7 @@ const Lottery = () => {
             </h3>
           </div>
 
-          {/* hours */}
+          {/*............>>> hours  ..........*/}
           <div className="md:w-[105px] w-[80px] md:h-[138px] h-[80px] bg-gradient-to-r from-pink to-blue rounded flex justify-center items-center flex-col md:mr-4 mr-2 ">
             <h3 className="md:text-[49px] text-[30px] text-white md:leading-[72.62px] leading-[36px] tracking-[50%] font-Oswald font-[400]">
               {hours}
@@ -94,8 +88,7 @@ const Lottery = () => {
             Hours
             </h3>
           </div>
-
-          {/* minutes */}
+          {/*............>> minutes ............ */}
           <div className="md:w-[105px] w-[80px] md:h-[138px] h-[80px] bg-gradient-to-r from-pink to-blue rounded flex justify-center items-center flex-col md:mr-4 mr-2 ">
             <h3 className="md:text-[49px] text-[30px] text-white md:leading-[72.62px] leading-[36px] tracking-[50%] font-Oswald font-[400]">
               {minutes}
@@ -104,8 +97,7 @@ const Lottery = () => {
             Minutes
             </h3>
           </div>
-
-          {/* seconds */}
+          {/*................>>> seconds  .............*/}
           <div className="md:w-[105px] w-[80px] md:h-[138px] h-[80px] bg-gradient-to-r from-pink to-blue rounded flex justify-center items-center flex-col ">
             <h3 className="md:text-[49px] text-[30px] text-white md:leading-[72.62px] leading-[36px] tracking-[50%] font-Oswald font-[400]">
               {seconds}
@@ -118,7 +110,6 @@ const Lottery = () => {
       </div>
     </div>
   </div>
-    {/* </Fade> */}
 </div>
   )
 }

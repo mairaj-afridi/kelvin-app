@@ -5,40 +5,7 @@ import { BsTelegram, BsDiscord } from 'react-icons/bs';
 
 
 function Footer() {
-  const sociallinks = [
-    {
-      link: <FaTwitter className='icon' />,
-      title: ' twitter'
-    },
-    {
-      link: <FaInstagram className='icon' />,
-      title: 'Instagram'
-    },
-    {
-      link: <FaFacebook className='icon' />,
-      title: 'Facebook'
-    },
-    {
-      link: <AiFillTwitterCircle className='icon' />,
-      title: 'Twitter'
-    },
-    {
-      link: <BsDiscord className='icon' />,
-      title: 'Discord'
-    },
-    {
-      link: <AiFillYoutube className='icon' />,
-      title: 'Youtube'
-    },
-    {
-      link: <FaTiktok className='icon' />,
-      title: 'FaTiktok'
-    },
-    {
-      link: <BsTelegram className='icon' />,
-      title: 'Telegram'
-    }
-  ]
+  
   return (
     <div className="w-full py-12 bg-[black] ">
       <div
@@ -56,10 +23,10 @@ function Footer() {
           </div>
           <div className="flex justify-center items-start flex-col ml-6">
             {/* logo Text */}
-            <h1 className="text-[40px] text-white " >BARBIE CAT</h1>
+            <h1 className= " text-[30px] sm:text-[38px] text-white " >BARBIE CAT</h1>
             <p className="text-white">Community Driven Coin</p>
 
-            <h3 className="text-[14px] text-white leading-[14px] font-Ubuntu font-[400] mt-4">
+            <h3 className="text-[14px] text-white leading-[14px] font-Ubuntu font-[400] mt-2">
               © 2023 All Right reserved.{" "}
               <a className="text-white underline" href="">
                 Policy Privacy
@@ -69,7 +36,7 @@ function Footer() {
           </div>
         </div>
         {/* .........................>>>> Right Links.......................*/}
-        <div className=" grid grid-cols-4 sm:grid-cols-8   item-center justify-center gap-5 items-center md:mt-0 mt-10">
+        <div className=" grid grid-cols-4 sm:grid-cols-8   item-center justify-center gap-1 sm:gap-3 items-center md:mt-0 mt-10">
           {sociallinks.map((item, index) => {
             return(
             <a key={index} className="flex justify-center items-center flex-col cursor-pointer">
@@ -89,4 +56,37 @@ function Footer() {
 
 export default Footer;
 
-
+const sociallinks = [
+  {
+    link: <FaTwitter className='icon' />,
+    title: ' twitter'
+  },
+  {
+    link: <FaInstagram className='icon' />,
+    title: 'Instagram'
+  },
+  {
+    link: <FaFacebook className='icon' />,
+    title: 'Facebook'
+  },
+  {
+    link: <AiFillTwitterCircle className='icon' />,
+    title: 'Twitter'
+  },
+  {
+    link: <BsDiscord className='icon' />,
+    title: 'Discord'
+  },
+  {
+    link: <AiFillYoutube className='icon' />,
+    title: 'Youtube'
+  },
+  {
+    link: <FaTiktok className='icon' />,
+    title: 'FaTiktok'
+  },
+  {
+    link: <BsTelegram className='icon' />,
+    title: 'Telegram'
+  }
+]

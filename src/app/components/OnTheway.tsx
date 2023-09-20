@@ -1,20 +1,16 @@
-import React from "react";
 import Image from "next/image";
-import { Fade } from "react-reveal";
 
 const OnTheway = () => {
   return (
     <div id="OnTheWay" className="w-full md:h-screen md:py-0 py-8">
-      {/* <Fade cascade bottom > */}
       <div
         className={`max-w-[1380px] w-full h-full m-auto flex justify-center items-start flex-col p-4`}
       >
-        {/* Heading */}
+        {/*..............>>> Heading ...............*/}
         <h1 className="capitalize font-Ubuntu font-bold text-white md:text-[65px] sm:text-[50px] text-[44px] md:leading-[70px] sm:leading-[58px] leading-[46px] mb-16">
           On the way 2023
         </h1>
-
-        {/* Cards */}
+        {/*.....................>>>> Cards ..............*/}
         <div className="w-full grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:grid-rows-1 sm:grid-rows-2 grid-rows-4 gap-6">
           {Cards.map((item, index) => {
             return (
@@ -24,9 +20,9 @@ const OnTheway = () => {
                     src={item.Img}
                     layout="fill"
                     objectFit="contain"
+                    alt="img"
                   />
                 </div>
-
                 <h3 className="font-Ubuntu font-bold text-white md:text-[22px] text-[18px] md:leading-[25.28px] leading-[24px] mt:3 uppercase">
                   {item.Title}
                 </h3>
@@ -35,7 +31,6 @@ const OnTheway = () => {
           })}
         </div>
       </div>
-        {/* </Fade> */}
     </div>
   )
 }
