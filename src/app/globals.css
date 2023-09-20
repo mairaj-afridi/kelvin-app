@@ -13,19 +13,19 @@
 #About,
 #Lottery,
 #OnTheWay {
-  background-image: url("/BG/About4.jpeg");
+  background-image: url("/BG/About33.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 #About {
-  background-image: url("/BG/About1.jpeg");
+  background-image: url("/BG/About111.jpeg");
 }
 #Lottery {
-  background-image: url("/BG/About4.jpeg");
+  background-image: url("/BG/About44.jpeg");
 }
 #OnTheWay {
-  background-image: url("/BG/About2.jpeg");
+  background-image: url("/BG/About22.jpeg");
 }
 
 @media screen and (max-width: 900px) {
@@ -35,4 +35,9 @@
   #OnTheWay {
     background-size: cover;
   }
+}
+
+.icon {
+  font-size: 32px; /* Adjust the size as needed */
+  color: white;
 }

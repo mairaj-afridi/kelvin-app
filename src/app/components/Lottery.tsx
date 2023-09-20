@@ -51,7 +51,7 @@ const Lottery = () => {
           <div className="absolute w-full h-full flex justify-center items-center">
             <div className="relative md:w-[100px] w-[60px] md:h-[100px] h-[60px]">
               <Image
-                src={"/BG/Logo.png"}
+                src={"/BG/Logo11.png"}
                 layout="fill"
                 objectFit="contain"
               />
